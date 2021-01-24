@@ -1,0 +1,71 @@
+.fadeInTransition {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.primaryButton {
+  width: 185px;
+  height: 48px;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  font-feature-settings: "ss02" on;
+  color: #fff;
+  background-color: $PRIMARY;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    width: 100%;
+  }
+
+}
+
+.secondaryButton {
+  width: 185px;
+  height: 48px;
+  border: solid 3px $PRIMARY;
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: $PRIMARY;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $PRIMARY;
+    border: $PRIMARY;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    width: 100%;
+  }
+
+}

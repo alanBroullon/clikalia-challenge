@@ -1,0 +1,68 @@
+@import "index";
+
+.coverContainer {
+  position: relative;
+  height: 600px;
+  max-height: 530px;
+  transition: height 1s;
+  margin: auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
+  background-color: #f7f7f7;
+
+  @media (max-width: $screen-sm-max) {
+    max-height: 520px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+  }
+}
+
+.coverInformationContainer {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  width: 60%;
+  z-index: 1;
+
+  @media (max-width: $screen-sm-max) {
+    top: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.coverTitle {
+  font-size: 72px;
+  line-height: 112%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 40px;
+  }
+}
+
+.coverTitleColor {
+  color: #ff0049;
+  cursor: pointer;
+}
+
+.coverImage {
+  position: absolute;
+  left: 120px;
+  width: 757px;
+  height: 100%;;
+  border-radius: 7px;
+
+  @media (max-width: $screen-sm-max) {
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+}
+
+.chevronButton {
+  cursor: pointer;
+}
